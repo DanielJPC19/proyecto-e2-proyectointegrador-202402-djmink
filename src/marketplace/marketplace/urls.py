@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('perfil/', include('perfil.urls')),
     path('accounts/', include('accounts.urls')),
-    path('', include('my_aplication.urls')),
-    path('project/', include('project_management.urls')), 
-    path('', include('notifications.urls')),
+    path('', include('my_aplication.urls')),  # Mantiene la raíz aquí
+    path('project/', include('project_management.urls')),
+    path('notifications/', include('notifications.urls')),  # Cambia el prefijo
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
