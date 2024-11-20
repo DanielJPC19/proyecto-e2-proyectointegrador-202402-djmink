@@ -25,7 +25,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'danieljpc19@gmail.com'
 EMAIL_HOST_PASSWORD = 'kqfvkjmkuyrnwubm'
@@ -33,7 +33,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_SSL = False
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']  # Para permitir cualquier subdominio de Render
 
 
 # Application definition
