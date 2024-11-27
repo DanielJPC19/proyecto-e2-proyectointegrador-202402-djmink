@@ -1,0 +1,166 @@
+.calendar-container {
+    width: 1204px;
+    margin: 0 auto;
+    background-color: #F2F2F2; /* Color alternativo */
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.up-calendar{
+    width: 1203px;
+    height: 80px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #BCBCBC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+#today-button {
+    height: 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+    width: 70px;
+    margin-top: 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+#today-button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calendar-btn{
+    margin-top: 5px;
+    border: none;
+}
+
+.arrow-btn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.arrow-btn.right{
+    transform: rotate(180deg);
+}
+
+#month-year {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calendar-grid {
+    background-color: #F2F2F2;
+    margin-top: 5px;
+    display: flex; /* Mantener en una fila */
+    justify-content: flex-start; /* Alineación horizontal */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+}
+
+/* Contenedores de meses con diferentes colores */
+.month-container {
+    display: flex;
+    border-radius: 8px;
+    background-color:#F2F2F2 ;
+}
+
+.calendar-day {
+    width: 41.5px;
+    height: 30px;
+    text-align: center;
+    display: flex;     
+    align-items: center;  
+    justify-content: center;  
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-day.holiday {
+    background-color: #ffeb3b; /* Color para los días con hitos */
+}
+
+.calendar-day.today {
+    background-color: #DA5F5F;
+    color: white;
+    border-radius: 50%;
+}
+
+.current-day-line {
+    position: absolute;
+    margin-left: 15px;
+    bottom: 0;
+    width: 4px;
+    background-color: #DA5F5F;
+    display: none;
+    z-index: 1;
+}
+
+.milestone-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    max-height: 400px;
+    margin-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.milestone-rectangle{
+    height: 60px;
+    position: relative;
+    width: 1204px;
+}
+
+.milestone-rectangle:nth-child(odd) {
+    background-color: #D9D9D9;
+}
+
+.milestone-rectangle:nth-child(even) {
+    background-color: #F2F2F2; /* Color alternativo */
+}
+
+.milestone {
+    top: 12px;
+    position: absolute;
+    align-items: center;  
+    display: flex;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.milestone-rectangle:nth-child(odd) .milestone{
+    background-color: #0040FF;
+    color: white;
+}
+
+.milestone-rectangle:nth-child(even) .milestone{
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.milestone-name {
+    overflow: hidden; /* Ocultar el desbordamiento */
+    white-space: nowrap; /* No permitir que el texto se divida en varias líneas */
+    text-overflow: ellipsis; /* Agregar puntos suspensivos para el texto que no cabe */
+    height: 30px; /* Asegúrate de que la altura sea la misma que el hito */
+    flex: 1; /* Hacer que el nombre del hito ocupe el espacio disponible */
+    padding: 0 5px; /* Espaciado lateral */
+}

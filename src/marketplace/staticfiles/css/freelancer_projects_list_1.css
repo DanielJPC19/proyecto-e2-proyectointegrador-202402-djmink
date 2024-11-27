@@ -1,0 +1,201 @@
+/* Freelancer projects*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.ptext{
+    position: absolute;
+}
+
+.projects-title-container{
+    position: relative;
+    height: 100px;
+    width: 1440px;
+    align-items: center;
+}
+
+.ptext.Projects{
+    font-weight: 500;
+    font-size: 40px;
+    left: 200px;
+}
+
+.projects-section{
+    width: 1440px;
+    max-height: 650px;
+    position: relative;
+}
+
+.projects-container{
+    max-height: 650px;
+    width: 1039px;
+    position: relative;
+    left: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.project-container{
+    width: 1039px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.project-container:last-child {
+    margin-bottom: 0;
+}
+
+.left{
+   width: 400px;
+   height: 300px;
+   position: relative; 
+   background-color: #BCBCBC;
+}
+
+.project-picture{
+    position: absolute;
+    left: 400px;
+    width: 639px;
+    height: 300px;
+    top: 0;
+}
+
+.ptext.project-name{
+    position: relative;
+    font-weight: 500px;
+    font-size: 30px;
+    height: 72px;
+    width: 350px;
+    left: 25px;
+    top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;            
+    -webkit-line-clamp: 2;           
+    -webkit-box-orient: vertical;    
+    line-height: 1.2;  
+    line-clamp: 2; 
+}
+
+.ptext.project-desc{
+    position: relative;
+    font-weight: 400px;
+    font-size: 16px;
+    left: 25px;
+    top: 18px;
+    width: 350px;
+    height: 116px;
+}
+
+.ptext.project-state{
+    font-weight: 400px;
+    font-size: 16px;
+    left: 25px;
+    top: 206px;
+}
+
+.open-btn{
+    height: 40px;
+    width: 350px;
+    border: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #0040FF;
+    color: #F2F2F2;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    left: 25px;
+    top: 240px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.open-btn:hover{
+    background-color: #0033CC;
+    transform: scale(1.02); 
+}
+
+.footer {
+    margin-top: 25px;
+    position: relative;
+    background-color: #F2F2F2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 1440px; 
+    height: 135px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-top: 57px;
+}
+
+.footer-nav a {
+    color: #01000C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; 
+}
+
+.encora {
+    position: absolute;
+    left: 37px;
+    top: 10px; 
+    height: 111px; 
+    width: 113px;
+}
+
+.social-icon{
+    position: absolute;
+    top: 78px;
+    height: 24px; 
+    width: 24px;
+    cursor: pointer;
+}
+
+.social-icon.gmail {
+    left: 1252px;
+}
+
+.social-icon.lin {
+    left: 1280px;
+}
+
+.social-icon.ig{
+    left: 1308px;
+}
+
+.social-icon.fb {
+    left: 1336px;
+}
+
+.footertext {
+    text-align:center;
+    font-size:12px;
+    font-weight: 400;
+    top:105px;
+    left:1205px;
+    position:absolute;
+    width:200px;
+    height:18px;
+}

@@ -1,0 +1,375 @@
+/* edit freelancer portfolio */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.editsection{
+    background-color:#F2F2F2;
+    width: 1440px;
+    height: 950px;
+    position: relative;
+}
+
+.ptext{
+    position: absolute;
+}
+
+.ptext.ep {
+    color:#7D7D7D;
+    font-size:14px;
+    font-weight: 700; /* Bold */
+    top:181px;
+    left:114px;
+    width:100px;
+    height:21px; 
+}
+
+.ptext.my-account {
+    color:#000000;
+    font-size:16px;
+    font-weight: 400;  /* Regular */
+    top:215px;
+    left:114px;
+    width:100px;
+    height:24px;
+    text-decoration: none; 
+}
+
+.ptext.profile {
+    color:#000000;
+    font-size:16px;
+    font-weight: 400;  /* Regular */
+    top:254px;
+    left:114px;
+    width:53px;
+    height:24px;
+    text-decoration: none; 
+}
+
+.ptext.portfolio {
+    color:#000000;
+    font-size:16px;
+    font-weight: 700; /* Regular */
+    top:293px;
+    left:114px;
+    width:94px;
+    height:24px;
+    text-decoration: none; 
+}
+
+.ptext.logout {
+    color:#000000;
+    font-size:16px;
+    font-weight: 400; 
+    top:371px;
+    left:114px;
+    width:94px;
+    height:24px;
+    text-decoration: none; 
+}
+
+.ptext.delete-account {
+    color:#DA5F5F;
+    font-size:16px;
+    font-weight: 400; /* Regular */
+    top:332px;
+    left:114px;
+    width:130px;
+    height:24px;
+    text-decoration: none; 
+}
+
+.body {
+    left:300px;
+    width: 1087px;
+    height: 824px;
+    position: relative;
+}
+
+.ptext.portfolio-title{
+    top: 68px;
+    left: 145px;
+    width: 200px;
+    height: 36px;
+    color:#000000;
+    font-size:24px;
+    font-weight: 500;
+}
+
+.add-button{
+    top: 110px;
+    left: 857px;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+}
+
+.ptext.add{
+    top: 9px;
+    left: 0px;
+    width: 29px;
+    height: 21px;
+    color:#000000;
+    font-size:14px;
+    font-weight: 400;
+}
+
+button.add{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button.add:hover {
+    background-color: #0136d5;
+    transform: translateY(-2px);
+}
+
+button.add.content-btn{
+    background-color: #0040FF;
+    right: 0px;
+    top: 0px;
+}
+
+.projects-container{
+    top: 183px;
+    left: 147px;
+    height: 440px;
+    max-height: 440px;
+    width: 817px;
+    position: absolute;
+    overflow-y: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 100px;
+    row-gap: 50px;  
+}
+
+.project-container {
+    width: 350px;
+    border-radius: 10px;
+    min-width: 150px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; 
+    height: 191px;
+}
+
+.project-container:nth-child(4n+1) {
+    background-color: #CAD0FF; 
+}
+
+.project-container:nth-child(4n+2) {
+    background-color: #FFA4A4; 
+}
+
+.project-container:nth-child(4n+3) {
+    background-color: #D2FFB6; 
+}
+
+.project-container:nth-child(4n+4) {
+    background-color: #CC94F7;
+}
+
+.edit-btn{
+    width: 24px;
+    height: 24px;
+    left: 280px;
+    top: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.delete-btn.project {
+    border: none;
+    position: relative;
+    left: 285px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    color: #000000;
+    background-color: transparent; 
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.delete-btn.project:hover {
+    transform: translateY(-2px);
+}
+
+
+.ptext.info-project{
+    top: 4px;
+    position: relative;
+    margin-bottom: -5px;
+    left: 42px;
+    height: 30px;
+    width: 249px;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.ptext.project-name{
+    position: relative;
+    left: 40px;
+    top: 5px;
+    height: 65px;
+    width: 270px;
+    font-weight: 500;
+    font-size: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;            
+    -webkit-line-clamp: 2;           
+    -webkit-box-orient: vertical;    
+    line-height: 1.2;  
+    line-clamp: 2; 
+}
+
+.med-btn{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    position: absolute;
+}
+
+.med-btn.save{
+    top: 700px;
+    left: 815px;
+    height: 40px;
+    width: 142px;
+    background-color: #0040FF;
+    border: none;
+    border-radius: 8px;
+}
+
+.modal {
+    justify-content: center;
+    align-items: center; 
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    width: 500px;
+    height: 490px;
+    top: 8%;
+    left: 31%;
+    background-color: #F2F2F2;
+    border: 1px solid #888; 
+    border-radius: 10px;
+    position: relative;
+}
+
+.ptext.add-project{
+    left: 50px;
+    top: 35px;
+    width: 317px;
+    height: 36px;
+    color:#000000;
+    font-size:24px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 20px; 
+    margin-top: 10px;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-container2 {
+    left: 50px;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+}
+
+.input-container2.name{
+    top: 92px;
+}
+
+.input-container2.company{
+    top: 167px;
+}
+
+.input-container2.duration{
+    top: 243px;
+}
+
+.input-container2.resources{
+    top: 322px;
+}
+
+.input-box{
+    vertical-align: middle;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #838282;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    resize: none; 
+    line-height: 40px;
+}
+
+.input-box.e{
+    left: 0px;
+    top: 28px;
+    width: 388px;
+    height: 40px;
+}
+
+.med-btn.add-project{
+    height: 40px;
+    width: 400px;
+    background-color: #0040FF;
+    top: 419px;
+    left: 50px;
+    border-radius: 8px;
+    border: none;
+}

@@ -15,7 +15,7 @@ import os
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-bcfo@0sf^(=w9dd^jv*$8_7)u1l^d(4i7j*di3na&*m1@-5hs$')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -98,7 +98,12 @@ WSGI_APPLICATION = 'marketplace.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse(
+        os.environ.get(
+            'DATABASE_URL',
+            'postgresql://usuario:contraseña@localhost:5432/nombre_base_datos_local'  # Valor local predeterminado
+        )
+    )
 }
 
 

@@ -1,0 +1,92 @@
+.modal-rate {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-rate-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; 
+}
+
+.close-rate {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 130px;
+}
+
+.close-rate:hover,
+.close-rate:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rating-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.star-rating input:hover ~ label,
+.star-rating input:checked ~ label {
+    color: gold;
+}
+
+.star-rating input:checked + label,
+.star-rating input:hover + label {
+    color: gold;
+}
+
+.ok-button {
+    font-family: "Poppins", sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ok-button:hover {
+    background-color: #45a049;
+}

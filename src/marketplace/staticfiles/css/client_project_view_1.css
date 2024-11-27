@@ -1,0 +1,686 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.main-title{
+    width: 1440px;
+    height: 121px;
+    position: relative;
+}
+
+.ptext{
+    position: absolute;
+}
+
+.ptext.project-name{
+    left: 100px;
+    height: 121px;
+    display: flex;     
+    align-items: center;   
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.editprojectbutton{
+    width: 105px;
+    height: 40px;
+    top: 40.5px;
+    position: absolute;
+    background-color: white;
+    color: #000000;
+    font-size: 12px;
+    left: 1240px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #BCBCBC;
+}
+
+.progress-container{
+    position: relative;
+    width: 1240px;
+    height: 86px;
+    left: 100px;
+}
+
+.ptext.progress{
+    font-size: 24px;
+    font-weight: 500;
+    left: 25px;
+    top: 10px;
+}
+
+.progress-bar {
+    border-radius: 25px;
+    left: 2%;
+    position: absolute;
+    top: 56px;
+    width: 96%;
+    background-color: white;
+    border: 1px solid #BCBCBC;
+    height: 30px;
+}
+
+.progress-fill {
+    border-radius: 25px;
+    height: 30px;
+    background-color: #4caf50;
+    transition: width 0.4s ease;
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.progress-text {
+    color: white;
+    font-weight: bold;
+}
+
+.back{
+    height: 1080px;
+    width: 1440px;
+}
+
+.middle-section{
+    position: relative;
+    width: 1240px;
+    height: 467px;
+    left: 100px;
+    margin-bottom: 20px;
+}
+
+.milestones-section{
+    width: 580px;
+    height: 417px;
+    position: absolute;
+    top: 25px;
+}
+
+.ptext.milestones-title{
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.milestones-container{
+    border-radius: 10px;
+    width: 581px;
+    max-height: 351px;
+    top: 66px;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.milestone-container-1{
+    position: relative;
+    margin-bottom: 0;
+    height: auto;
+    width: 580px;
+    overflow: hidden;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+}
+
+.milestone-header{
+    cursor: pointer;
+    width: 580px;
+    height: 40px;
+    background-color: white;
+}
+
+.ptext.milestone-name{
+    left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 8px;
+    width: 170px;
+}
+
+.freelancer-picture-1{
+    left: 200px;
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.ptext.freelancer-name-1{
+    left: 230px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    width: 80px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.ptext.milestone-progress{
+    left: 314px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.ptext.milestone-deadline{
+    left: 365px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.btn{
+    background-color: #0040FF;
+    height: 30px;
+    position: absolute;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn.pay-freelancer{
+    left: 314px;
+    top: 5px;
+    width: 40px;
+}
+
+.btn:hover {
+    background-color: #0033cc; 
+    transform: scale(1.05); 
+}
+
+.btn.assignment{
+    top: 5px;
+    left: 442px;
+    width: 84px;
+}
+
+.arrow{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 536px;
+    top: 8px;
+    transform: rotate(180deg);
+}
+
+.tasks-list {
+    background-color: white;
+    height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.tasks-list.open {
+    height: auto;
+}
+
+.task-container{
+    width: 580px;
+    height: 26px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+.ptext.task-name{
+    font-size: 14px;
+    left: 40px;
+    width: 530px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+  
+.ptext.info{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 15px;
+}
+
+.ptext.info.no-freelancer{
+    top: 10px;
+    width: 500px;
+    left: 200px;
+    font-size: 12px;
+}
+
+.applications-section{
+    width: 580px;
+    height: 417px;
+    left: 660px;
+    position: absolute;
+    top: 25px;
+}
+
+.ptext.applications-title{
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.milestones-applications-container{
+    width: 580px;
+    max-height: 351px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 66px;
+}
+
+.milestone-application-container{
+    position: relative;
+    width: 580px;
+    height: auto;
+}
+
+.ptext.milestone-application-name{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.applications-container{
+    position: relative;
+    height: auto;
+}
+
+.application-container{
+    position: relative;
+    width: 555px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #BCBCBC;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.freelancer-picture-2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.ptext.application-freelancer-name{
+    left: 60px;
+    top: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn.accept{
+    left: 312px;
+    width: 63px;
+    top: 15px;
+}
+
+.btn.reject{
+    left: 380px;
+    width: 63px;
+    top: 15px;
+}
+
+.btn.view-profile{
+    left: 448px;
+    width: 95px;
+    top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.calendar-container {
+    top: 603px;
+    width: 1204px;
+    margin: 0 auto;
+    background-color: #F2F2F2; /* Color alternativo */
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.up-calendar{
+    width: 1203px;
+    height: 80px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #BCBCBC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+#today-button {
+    height: 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    width: 70px;
+    margin-top: 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+#today-button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calendar-btn{
+    margin-top: 5px;
+    border: none;
+}
+
+.arrow-btn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.arrow-btn.right{
+    transform: rotate(180deg);
+}
+
+#month-year {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calendar-grid {
+    background-color: #F2F2F2;
+    margin-top: 5px;
+    display: flex; /* Mantener en una fila */
+    justify-content: flex-start; /* Alineación horizontal */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+}
+
+/* Contenedores de meses con diferentes colores */
+.month-container {
+    display: flex;
+    border-radius: 8px;
+    background-color:#F2F2F2 ;
+}
+
+.calendar-day {
+    width: 41.5px;
+    height: 30px;
+    text-align: center;
+    display: flex;     
+    align-items: center;  
+    justify-content: center;  
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-day.holiday {
+    background-color: #ffeb3b; /* Color para los días con hitos */
+}
+
+.calendar-day.today {
+    background-color: #DA5F5F;
+    color: white;
+    border-radius: 50%;
+}
+
+.current-day-line {
+    position: absolute;
+    margin-left: 15px;
+    bottom: 0;
+    width: 4px;
+    background-color: #DA5F5F;
+    display: none;
+    z-index: 1;
+}
+
+.milestone-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    max-height: 400px;
+    margin-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.milestone-rectangle{
+    height: 60px;
+    position: relative;
+    width: 1204px;
+}
+
+.milestone-rectangle:nth-child(odd) {
+    background-color: #D9D9D9;
+}
+
+.milestone-rectangle:nth-child(even) {
+    background-color: #F2F2F2; /* Color alternativo */
+}
+
+.milestone {
+    top: 12px;
+    position: absolute;
+    align-items: center;  
+    display: flex;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.milestone-rectangle:nth-child(odd) .milestone{
+    background-color: #0040FF;
+    color: white;
+}
+
+.milestone-rectangle:nth-child(even) .milestone{
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.milestone-name {
+    overflow: hidden; /* Ocultar el desbordamiento */
+    white-space: nowrap; /* No permitir que el texto se divida en varias líneas */
+    text-overflow: ellipsis; /* Agregar puntos suspensivos para el texto que no cabe */
+    height: 30px; /* Asegúrate de que la altura sea la misma que el hito */
+    flex: 1; /* Hacer que el nombre del hito ocupe el espacio disponible */
+    padding: 0 5px; /* Espaciado lateral */
+}
+
+.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 400px;
+    height: 356px;
+    background-color: #F2F2F2;
+    border: 1px solid #888; 
+    border-radius: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+}
+
+.ptext.modal-title{
+    left: 20px;
+    top: 15px;
+    font-size:24px;
+    font-weight: 500;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 20px; 
+    margin-top: 10px;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ptext.selected-milestone-title{
+    left: 20px;
+    top: 55px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ptext.selected-freelancer-title{
+    left: 20px;
+    top: 90px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ptext.amount-to-pay{
+    left: 20px;
+    top: 125px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.currency-select{
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    font-size: 16px;
+}
+
+.input-amount{
+    position: absolute;
+    left: 20px;
+    top: 195px;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+.btn.make-pay{
+    left: 20px;
+    top: 300px;
+    width: 120px;
+}
+
+.assignments-modal-list{
+    max-height: 250px;
+    position: relative;
+    top: 40px;
+    width: 400px;
+    overflow-y: auto;
+}
+
+.assignment-item{
+    border-radius: 5px;
+    position: relative;
+    height: 246px;
+    background-color: rgb(208, 208, 206);
+    width: 320px;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+.assignment-item:last-child {
+    margin-bottom: 0;
+}
+
+.assignment-info-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 140px;
+}
+
+.ptext.assignment-info{
+    position: relative;
+    left: 10px;
+    height: auto;
+    font-size: 15px;
+    width: 280px;
+}
+
+.comments-section{
+    position: relative;
+    height: 105px;
+    width: 300px;
+    left: 10px;
+    border-top: 1px solid #BCBCBC;
+}
+
+.ptext.comments-title{
+    font-size: 16px;
+}
+
+.comment-input{
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 25px;
+    width: 295px;
+    height: 40px;
+    resize: none;
+    overflow: hidden;
+}
+
+.btn.add-comment{
+    top: 75px;
+    right: 0;
+    width: 70px;
+}

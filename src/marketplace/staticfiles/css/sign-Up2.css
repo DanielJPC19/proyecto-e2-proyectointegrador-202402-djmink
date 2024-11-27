@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.logo-pic{
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    margin: 0 10px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+}
+
+.lineNav {
+    margin-right: 20px;
+    height: 70px;
+    width: 1px;
+    background-color: rgba(1, 0, 12, 1);
+}
+
+.navText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.title h1{
+    font-weight: 600;
+}
+
+.text2{
+    color: rgba(0, 64, 255, 1);
+}
+
+.profile-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-upload span{
+    margin-top: 15px;
+}
+
+
+.profile-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid silver;
+}
+
+.profile-circle img {
+    object-fit: cover;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.buttonSubmit{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 64, 255, 1);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.skipButton{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}

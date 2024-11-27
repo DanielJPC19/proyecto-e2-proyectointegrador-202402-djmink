@@ -1,0 +1,78 @@
+.footer {
+    position: relative;
+    background-color: #F2F2F2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 1440px; 
+    height: 135px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-top: 57px;
+}
+
+.footer-nav a {
+    color: #01000C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; 
+}
+
+.encora {
+    position: absolute;
+    left: 37px;
+    top: 10px; 
+    height: 111px; 
+    width: 113px;
+}
+
+.social-icon{
+    position: absolute;
+    top: 78px;
+    height: 24px; 
+    width: 24px;
+    cursor: pointer;
+}
+
+.social-icon.gmail {
+    left: 1252px;
+}
+
+.social-icon.lin {
+    left: 1280px;
+}
+
+.social-icon.ig{
+    left: 1308px;
+}
+
+.social-icon.fb {
+    left: 1336px;
+}
+
+.footertext {
+    text-align:center;
+    font-size:12px;
+    font-weight: 400;
+    top:105px;
+    left:1205px;
+    position:absolute;
+    width:200px;
+    height:18px;
+}
+
+.ptext{
+    position: absolute;
+}

@@ -1,0 +1,248 @@
+.commentssection {
+    height: 100%;
+    width:100%;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+
+.commentstitle{
+    width: 80%;
+    height: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 2%; 
+}
+
+.publish-comment-section{
+    width: 80%;
+    height: 150px;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.publish-comment-section form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.input-comment{
+    padding: 10px;
+    height: 70%;
+    width: 98%;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.publish-btn {
+    position: absolute;
+    right: 0px;
+    width: 119px;
+    height: 20%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #007BFF;
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.joinbutton:hover {
+    background-color: #0056b3;
+}
+
+.comments {
+    background-color: #F2F2F2;
+    overflow-x: hidden; 
+    width: 80%; 
+    height: 215px;
+    max-height: 209px;
+    overflow-y: auto; 
+    margin: 20px auto;
+    margin-bottom: 5%;
+}
+
+.comment {
+    left: 1%;
+    position: relative;
+    display: flex; 
+    margin-bottom: 15px; 
+    padding: 10px;
+    border-bottom: 1px solid #000000; 
+    background-color: #F2F2F2;
+    text-align: justify; 
+    width: 96%;
+    height: auto;
+    flex-direction: column;
+}
+
+.comment:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+
+.profilecommenting {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+}
+
+.ptext.username {
+    font-size: 16px;
+    left: 70px;
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+.ptext.date {
+    left: 70px;
+    top: 40px;
+    font-size: 12px;
+    color: #888; 
+    margin-bottom: 5px; 
+    font-weight: 400;
+}
+
+.ptext.comment-text{
+    margin-top: 6px;
+    position: relative;
+    height: auto;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    width: 95%;
+    left:2%;
+    height: auto;
+}
+
+.btn{
+    border: none;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn.edit{
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 10px;
+    right: 6%;
+    width: 24px;
+    height: 24px;
+    color: white; 
+}
+
+.edit-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.edit-textarea {
+    position: relative;
+    left: 1%;
+    width: 95%;
+    margin-top: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    resize: none;
+    text-align: left;
+    padding-left: 8px;
+    background-color: #F2F2F2;
+}
+
+.ptext{
+    position: absolute;
+}
+
+.btn.save-edit{
+    position: relative;
+    margin-top: 8px;
+    width: 80px;
+    height: 18px;
+    left: 1%;
+    background-color:  #BCBCBC;
+    border: 1px solid #ccc;
+    color: #01000C;
+    padding: 0; 
+}
+
+.delete-form {
+    position: absolute;
+    display: inline-flex;        
+    justify-content: center;     
+    align-items: center;                           
+    width: auto;                
+    height: auto; 
+    margin-top: 5px;
+    right: 3%;
+    margin-right: 5px;              
+}
+
+.btn.delete{
+    width: 24px;
+    height: 24px;
+    color: #030303;
+    font-size: 24px;
+}
+
+.replies{
+    margin-top: 10px;
+    position: relative;
+    width: 90%;
+    left: 6%;
+    height: auto;
+}
+
+.reply{
+    display: flex; 
+    margin-bottom: 15px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #F2F2F2;
+    text-align: justify; 
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+    .replies{
+        left: 4%;
+    }
+
+    .delete.form{
+        right: 5%;
+    }
+
+    .btn.edit{
+        right: 8%;
+    }
+
+}

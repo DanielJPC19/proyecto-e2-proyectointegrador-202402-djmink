@@ -1,0 +1,206 @@
+/* Client main */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.mainback {
+    height: 1400px;
+    width: 1440px; 
+    position:relative;
+    background-color: #F2F2F2;
+}
+
+.ptext{
+    position: absolute;
+}
+
+.ptext.welcome{
+    color:#000000;
+    font-size:54px;
+    font-weight: 600;
+    top:60px;
+    left:165px;
+    width:280px;
+    height:81px;
+}
+
+.ptext.name_profile{
+    color:#000000;
+    font-size:24px;
+    font-weight: 500;
+    top:148px;
+    left:172px;
+    width:400px;
+    height:36px;
+}
+
+.ptext.myprojects{
+    color: black;
+    width: 250px;
+    left: 165px;
+    top: 210px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 40px; 
+}
+
+.ptext.add{
+    color: black;
+    width: 29px;
+    left: 1182px;
+    top: 230px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 20px; 
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    position: absolute; 
+    right: 160px;
+    top: 245px; 
+    transform: translateY(-50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; 
+}
+
+.projects-container {
+    position: relative; 
+    width: 1206px;
+    top: 310px;
+    left: 117px;
+    height: auto;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+.project-container {
+    position: relative;
+    width: 1189px;
+    height: 300px;
+    border-radius: 10px; 
+    margin-bottom: 50px;
+}
+
+.project-container:last-child {
+    margin-bottom: 0;
+}
+
+.ptext.project-name{
+    position: relative;
+    width: 300px;
+    height: auto;
+    max-height: 120px;
+    left: 63px;
+    top: 28px;
+    font-weight: 500;
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;            
+    -webkit-line-clamp: 2;           
+    -webkit-box-orient: vertical;    
+    line-height: 1.2;  
+    line-clamp: 2;       
+}
+
+.ptext.project-description{
+    position: relative;
+    left: 63px;
+    top: 33px;
+    height: 24px;
+    width: 300px;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.ptext.project-state{
+    position: absolute;
+    left: 63px;
+    top: 150px;
+    width: 300px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.project_picture{
+    position:absolute;
+    left: 414px;
+    height:300px;
+    width:775px;
+}
+
+.btn{
+    height: 40px;
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16;
+}
+
+.btn.preview{
+    top: 183px;
+    width: 145px;
+    left: 63px;
+}
+
+.btn.edit{
+    top: 183px;
+    width: 145px;
+    left: 216px;
+}
+
+.btn.open{
+    top: 233px;
+    width: 300px;
+    left: 63px;
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+.project-container:nth-child(4n+1) {
+    background-color: #CAD0FF; 
+}
+
+.project-container:nth-child(4n+2) {
+    background-color: #FFA4A4; 
+}
+
+.project-container:nth-child(4n+3) {
+    background-color: #D2FFB6; 
+}
+
+.project-container:nth-child(4n+4) {
+    background-color: #CC94F7; 
+}

@@ -1,0 +1,259 @@
+.aboutsection {
+    margin-top: 3%;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8%;
+}
+
+.ptext.about-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    font-weight: 500;
+    font-size: 40px; 
+}
+
+.lineNav2 {
+    margin-left: 10px;
+    height: 240px;
+    width: 2px;
+    background-color: rgba(1, 0, 12, 1);
+}
+
+.lineNav2 b{
+    margin-left: 40px;
+}
+
+.items-about{
+    margin-top: 10%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-content{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+
+.habilities-content{
+    width: 25%;
+    height: 100%;
+}
+
+.certificates-content{
+    width: 30%;
+    height: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+.experience {
+    width: 265px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.experience-header {
+    background-color: #f6c6c6;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px 10px 0 0; 
+    margin-bottom: 15px;
+}
+
+.experience-body {
+    color: #333;
+}
+
+.jobs-done {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.percentage {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.join-date {
+    font-size: 18px;
+}
+
+.habilities-container {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.hability-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hability {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block; 
+    color: #333;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    max-width: 90%; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.hability-container:nth-child(6n+1) .hability {
+    background-color: #f6c6c6;
+}
+
+.hability-container:nth-child(6n+2) .hability {
+    background-color: #7ddac1; 
+}
+
+.hability-container:nth-child(6n+3) .hability {
+    background-color: #f6e6e6;
+}
+
+.hability-container:nth-child(6n+4) .hability {
+    background-color: #3c3838;
+    color: white;
+}
+
+.hability-container:nth-child(6n+5) .hability {
+    background-color: #c87cff;
+    color: white;
+}
+
+.hability-container:nth-child(6n+6) .hability {
+    background-color: #dbe4c2;
+}
+
+.certificates-container {
+    width: 80%;
+    max-height: 160px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.certificate-container {
+    height: 76px; 
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.ptext.name-certificate {
+    width: 90%;
+    font-size: 14px; 
+    font-weight: 400;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rectangle20 {
+    top: 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #BCBCBC; 
+    width: 80%;
+    height: 50px;
+    position: relative; 
+    align-items: center;
+    display: flex;
+}
+
+.card {
+    position: absolute;
+    top: 25%;
+    margin-left: 16px; 
+    width: 24px;
+    height: 24px;
+}
+
+.ptext.type-certificate {
+    font-weight: 500;
+    font-size: 12px;
+    color: #0040FF;
+    margin-left: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.view {
+    height: 24px;
+    width: 24px; 
+    cursor: pointer; 
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+
+.rectangle20 a {
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+
+    .lineNav2{
+        display: none;
+    }
+    
+    .ptext.about-title{
+        font-size: 30px; 
+    }
+
+    .ptext.type-certificate {
+        margin-left: 35px;
+    }
+
+    .rectangle20 {
+        width: 70%;
+    }
+    
+    .card {
+        margin-left: 10px; 
+    }
+
+    .jobs-done {
+        font-size: 15px;
+    }
+    
+    .price {
+        font-size: 15px;
+    }
+    
+    .join-date {
+        font-size: 15px;
+    }
+
+
+}

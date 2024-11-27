@@ -1,0 +1,76 @@
+.heading {
+    background-color:#F2F2F2;
+    height:102px;
+    width: 1440px; 
+    position:relative;
+}
+
+.ptext{
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+}
+
+.ptext.hometext{
+    color:#000000;
+    font-size:24px;
+    font-weight: 600;
+    line-height:auto;
+    top:32px;
+    left:690px;
+    width:60px;
+    height:30px;
+}
+
+.icon{
+    top:35px;
+    position:absolute;
+    width:35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.icon.chat_icon{
+    left:1268px;
+}
+
+.icon.notification_icon{
+    left:1315px;
+}
+
+.logo{
+    top:7px;
+    left:40px;
+    position:absolute;
+    width:80px;
+    height: 80px;
+}
+
+.logoseparator{
+    top:45px;
+    left:95px;
+    width: 60px;
+    transform:rotate(-90deg);
+    border:1px solid #01000c;
+    position:absolute;
+}
+
+.ptext.onlinemarketplace{
+    color:#01000c;
+    font-size:18px;
+    font-weight: 500;
+    top:20px;
+    left:150px;
+    width:100px;
+    height: 66px;
+    cursor: pointer;
+}
+
+.profile_picture_heading {
+    top:25px;
+    left:1365px;
+    position:absolute;
+    width:50px;
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover;
+}

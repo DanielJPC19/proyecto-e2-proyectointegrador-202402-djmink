@@ -1,0 +1,396 @@
+
+/* NO RESPONSIVE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color:#F2F2F2;
+}
+
+.logo-pic{
+    width: 100px;
+    height: 100px;
+}
+
+.icon{
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.lineNav {
+    margin-right: 20px;
+    height: 70px;
+    width: 1px;
+    background-color: rgba(1, 0, 12, 1);
+}
+
+.navText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.navBar {
+    display: flex;
+    margin-right: 20px;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navBar ul li {
+    margin: 10px;
+}
+
+.firstsection{
+position:relative;
+width: 100%;
+height: 90vh;
+display: flex;
+justify-content: center;
+background-color:#F2F2F2;
+}
+
+.container{
+    margin-top: 6%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+.container2{
+    margin-top: 60px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 234px;
+    justify-content: center;
+}
+
+
+.searchbar{
+    margin-top: 20px;
+    position: relative;
+    width:280px;
+    height:30px;
+}
+
+.search {
+    text-indent: 10px;
+    border-radius: 20px;
+    color:#01000c;
+    text-align:left;
+    border: none;
+    font-size:14px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    padding-right: 35px;
+}
+
+.frame
+{
+    position: absolute;
+    top: 50%; /* Centra verticalmente la imagen en relación con el input */
+    transform: translateY(-50%);
+    height:100%;
+    width:24px;
+    cursor: pointer;
+    right: 10px;
+}
+
+.onlinemarketplaceforfreelancers
+{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.join-us{
+    background-color: transparent;
+    border: none;
+    height:30px;
+    width:100px;
+    border-radius:10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-emphasis: none;
+    color: #ffffff;
+    background-color: #0040FF;
+}
+
+.login{
+    color: #000;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+.freelancers {
+    color: #0040FF; 
+}
+
+.developyourproject
+{
+font-size: 70px;
+height: 90px;
+color:#01000c;
+text-align:center;
+font-weight: 700;
+}
+
+.freelancersection
+{
+position:relative;
+width: 100%;
+height: 100vh;
+overflow: hidden; 
+display: flex;
+justify-content: center; 
+}
+
+
+.backgroundfreelancer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.forfreelancers
+{
+    font-size: 54px;
+    color:#ffffff;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+.freelancerdescription
+{
+margin-top: 10px;
+color:#ffffff;
+font-weight: 400;
+padding-left: 5%;
+font-size: 18px;
+}
+
+.joinfreelancerbutton
+{
+background-color: transparent;
+border: 1px solid #bcbcbc;
+height:54px;
+width:192px;
+border-radius:10px;
+cursor: pointer;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 60px;
+margin-left: 5%; 
+text-emphasis: none;
+color: #ffffff;
+
+}
+
+.b2 {
+    position: absolute;
+    bottom: -10px;
+
+}
+
+.lastsection{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%; 
+}
+
+.containerlast {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containers{
+    margin-top: 2%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container4{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.eoc {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(115, 115, 115, 1), rgba(218, 218, 218, 0)); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 11;
+    
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 12;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.eoctitle
+{
+    margin-top: 4%;
+    font-size:25px;
+    font-weight: 600;
+}
+
+.footer {
+    position: relative;
+    background-color: #F2F2F2;
+    font-weight: 400;
+    width: 100%;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-left: 30px; 
+    height: 100px; 
+    width: 100px;
+}
+
+.footer-nav a {
+    color: #01000C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; 
+}
+
+.media a{
+    text-decoration: none;
+}
+
+.footer-right{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    height: 24px; 
+    width: 24px;
+    cursor: pointer;
+}
+
+.footertext {
+    text-align:center;
+    font-size:12px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .container4 {
+        width: 55%;
+        margin-bottom: 10%; /* Hace que los contenedores ocupen todo el ancho en pantallas más pequeñas */
+    }
+
+    .containers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .developyourproject{
+        font-size: 60px;
+    }
+
+    .container2{
+        height: 260px;
+    }
+
+}
+

@@ -1,0 +1,262 @@
+/* edit freelancer account */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.editsection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5%;
+}
+
+.left-navigation{
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 15%;
+}
+
+.navigation-text{
+    color:#000000;
+    font-size:16px;
+    font-weight: 400;
+    width:100%;
+    text-decoration: none;
+    margin-bottom: 3%;
+}
+
+.navigation-text.current{
+    font-weight: 700;
+}
+
+.navigation-text.ep{
+    color:#7D7D7D;
+    font-size:14px;
+    font-weight: 700;
+}
+
+.navigation-text.del{
+    color:#DA5F5F;
+}
+
+.fields {
+    margin-top: 3%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.fields form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.ptext.myaccount{
+    width: 60%;
+    height: 36px;
+    color:#000000;
+    font-size:24px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.ptext.basic-info{
+    width: 60%;
+    height: 27px;
+    color:#000000;
+    font-size:18px;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.input-container{
+    width: 60%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    width: 100%;
+    height: 28px;
+    color:#000000;
+    font-size:14px;
+    font-weight: 400;
+}
+
+.input-box{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    font-family: "Poppins", sans-serif;
+    color: #01000C;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    resize: none; 
+    line-height: 40px;
+}
+
+.med-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    width: 170px;
+}
+
+.buttons-container{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.med-btn.pass{
+    background-color: #01000C;
+}
+
+.med-btn.save{
+    background-color: #0040FF;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #F2F2F2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 360px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.up-modal-content{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.change-password-title{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 70%;
+    height: 54px;
+    color:#000000;
+    font-size:24px;
+    font-weight: 500;
+}
+
+.close {
+    text-align: end;
+    width: 10%;
+    height: 54px;
+    color: #aaa;
+    font-size: 35px;
+    font-weight: bold; 
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ptext.pass{
+    width: 100%;
+    text-align: left;
+}
+
+.input-container2 {
+    width: 90%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.med-btn.change-pass{
+    margin-top: 5%;
+    background-color: #0040FF;
+}
+
+@media (max-width: 768px) {
+    .buttons-container{
+        flex-direction: column;
+    }
+
+    .med-btn.pass {
+        margin-bottom: 5%;
+    }
+
+    .navigation-text{
+        margin-bottom: 10%;
+        font-size: 14px;
+    }
+}

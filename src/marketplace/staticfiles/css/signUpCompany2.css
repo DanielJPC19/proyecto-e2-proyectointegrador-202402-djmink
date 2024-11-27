@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+nav {
+    margin: 0 10px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    max-width: 509px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.logo-pic{
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+}
+
+.lineNav {
+    margin-right: 20px;
+    height: 70px;
+    width: 1px;
+    background-color: rgba(1, 0, 12, 1);
+}
+
+.navText {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+nav a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.highlight {
+    color: #0040ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, select {
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.submit-button {
+    background-color: #0040ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #002697;
+}

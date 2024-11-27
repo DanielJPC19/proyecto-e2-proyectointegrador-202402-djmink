@@ -6,4 +6,5 @@ psycopg2 == 2.9.10
 sqlparse == 0.5.2
 selenium == 4.26.0
 pillow == 11.0.0
-whitenoise == 6.8.2
+whitenoise==6.2.0
+Brotli==1.0.9

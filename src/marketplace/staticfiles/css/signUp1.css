@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.logo-pic{
+    width: 100px;
+    height: 100px;
+}
+
+.google-icon{
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+
+nav {
+    margin: 0 10px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+}
+
+.lineNav {
+    margin-right: 20px;
+    height: 70px;
+    width: 1px;
+    background-color: rgba(1, 0, 12, 1);
+}
+
+.navText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 509px; /* Limitar el ancho máximo */
+    width: 100%; /* Hacerlo 100% para el centrado */
+    margin: 0 auto; /* Centrar el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    margin: 35px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.freelancer {
+    color: rgba(0, 64, 255, 1);
+    cursor: pointer;
+}
+
+.googleButton {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 1px solid silver;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.googleButton:hover {
+    background-color: #d8d8d8;
+}
+
+.inputText,
+.buttonSubmit {
+    width: 100%;
+    max-width: 400px; /* Se asegura que el ancho máximo sea 400px */
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 1px solid silver;
+}
+
+input{
+    text-indent: 10px;
+}
+
+.inputContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegura que el contenedor de entrada sea 100% */
+    max-width: 400px; /* Mantiene el ancho máximo */
+}
+
+.codeNumber, .numberPhone {
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.buttonSubmit {
+    margin-top: 20px;
+    background-color: rgba(0, 64, 255, 1);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.buttonSubmit:hover {
+    background-color: rgb(0, 38, 151);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .inputContainer span {
+        font-size: 14px;
+    }
+}
